@@ -31,7 +31,7 @@
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
-            <nav class="mdl-navigation">
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
                 <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/">Forsiden</a>
                 <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/partier">Partier</a>
                 <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/utvalg">Utvalg</a>
@@ -41,6 +41,17 @@
             </nav>
         </div>
     </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Navigasjon</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="/">Forsiden</a>
+            <a class="mdl-navigation__link" href="/partier">Partier</a>
+            <a class="mdl-navigation__link" href="/utvalg">Utvalg</a>
+            <a class="mdl-navigation__link" href="/kalender">Møtekalender</a>
+            <a class="mdl-navigation__link" href="/kontakt">Kontakt</a>
+            <a class="mdl-navigation__link" href="/personvern">Personvern</a>
+        </nav>
+    </div>
     <main class="mdl-js-layout mdl-layout__content">
         <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--3-col"></div>

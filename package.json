@@ -32,6 +32,16 @@
   "bugs": {
     "url": "http://github.com/telemark/politikk.microsite.t-fk.no/issues"
   },
+  "louie": {
+    "versionName": "Australian Crawl",
+    "versionVideoUrl": "https://www.youtube.com/watch?v=URgPL9AjkbQ",
+    "systemName": "politikk.microsite.t-fk.no"
+  },
+  "standard": {
+    "ignore": [
+      "public"
+    ]
+  },
   "devDependencies": {
     "coveralls": "2.11.12",
     "nsp": "2.6.1",
