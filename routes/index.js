@@ -58,5 +58,21 @@ module.exports = [
       handler: handlers.showCommitties,
       description: 'Show committies'
     }
+  },
+  {
+    method: 'GET',
+    path: '/utvalg/{boardId}',
+    config: {
+      handler: handlers.showCommittee,
+      description: 'Show committee'
+    }
+  },
+  {
+    method: 'GET',
+    path: '/politikere/{politikerId}',
+    config: {
+      handler: handlers.showPolitician,
+      description: 'Show politician'
+    }
   }
 ]
