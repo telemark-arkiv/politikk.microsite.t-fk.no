@@ -1,14 +1,18 @@
-<table>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col"></div>
+<table  class="mdl-data-table mdl-js-data-table mdl-cell--8-col mdl-cell--8-col-tablet mdl-shadow--2dp">
     <tbody>
     {{#each meetings}}
     <tr>
-        <td>
+        <td class="mdl-data-table__cell--non-numeric">
             {{date}} {{year}}
         </td>
-        <td>
+        <td class="mdl-data-table__cell--non-numeric">
             <a href="/agenda/{{_id}}">{{boardName}}</a>
         </td>
     </tr>
     {{/each}}
     </tbody>
 </table>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+</div>

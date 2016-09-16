@@ -4,18 +4,20 @@
     {{meeting.place}}
 </div>
 <h2>Saksliste</h2>
-<table>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col"></div>
+<table class="mdl-data-table mdl-js-data-table mdl-cell--8-col mdl-cell--8-col-tablet mdl-shadow--2dp">
     <thead>
     <tr>
-        <th>Saksnummer</th>
-        <th>Sakstittel</th>
+        <th class="mdl-data-table__cell--non-numeric">Saksnummer</th>
+        <th class="mdl-data-table__cell--non-numeric">Sakstittel</th>
     </tr>
     </thead>
     <tbody>
     {{#each meeting.agenda}}
     <tr>
-       <td>{{agendanumber}}</td>
-        <td>
+       <td class="mdl-data-table__cell--non-numeric">{{agendanumber}}</td>
+        <td class="mdl-data-table__cell--non-numeric">
             {{title}}<br/>
             {{#each documents}}
             <a href="{{documentUrl}}" target="_blank">{{title}}</a><br/>
@@ -25,3 +27,5 @@
     {{/each}}
     </tbody>
 </table>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+</div>

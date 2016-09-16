@@ -1,26 +1,34 @@
-<div class="table-responsive">
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col"></div>
     <table class="table" class="table table-striped table-hover">
         <thead>
         <tr>
-            <th>Kontaktinformasjon</th>
+            <th class="mdl-data-table__cell--non-numeric">Kontaktinformasjon</th>
         </tr>
         </thead>
         <tbody>
         {{#if publicMail}}
         <tr>
-            <td><span class="glyphicon glyphicon-envelope"></span>&nbsp;<a href="mailto:{{publicMail}}" title="Send e-post til {{publicMail}}">{{publicMail}}</a></td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="mailto:{{publicMail}}" title="Send e-post til {{publicMail}}">{{publicMail}}</a>
+            </td>
         </tr>
         {{/if}}
         {{#if mobilePhone}}
         <tr>
-            <td><span class="glyphicon glyphicon-phone"></span>&nbsp;<a href="tel:{{mobilePhone}}" title="Ring til mobiltelefonnummer {{mobilePhone}}">{{mobilePhone}}</a></td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="tel:{{mobilePhone}}" title="Ring til mobiltelefonnummer {{mobilePhone}}">{{mobilePhone}}</a>
+            </td>
         </tr>
         {{/if}}
         {{#if phone}}
         <tr>
-            <td><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;<a href="tel:{{phone}}" title="Ring til telefonnummer {{phone}}">{{phone}}</a></td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="tel:{{phone}}" title="Ring til telefonnummer {{phone}}">{{phone}}</a>
+            </td>
         </tr>
         {{/if}}
         </tbody>
     </table>
+    <div class="mdl-cell mdl-cell--2-col"></div>
 </div>

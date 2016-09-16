@@ -1,16 +1,20 @@
-<table>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col"></div>
+<table class="mdl-data-table mdl-js-data-table mdl-cell--8-col mdl-cell--8-col-tablet mdl-shadow--2dp">
     <thead>
     <tr>
-        <th>Utvalg</th>
-        <th>Møtekalender</th>
+        <th class="mdl-data-table__cell--non-numeric">Utvalg</th>
+        <th class="mdl-data-table__cell--non-numeric">Møtekalender</th>
     </tr>
     </thead>
     <tbody>
     {{#each committees}}
     <tr>
-        <td><a href="/utvalg/{{_id}}">{{name}}</a></td>
-        <td><a href="/kalender?boardId={{_id}}">Møtekalender</a></td>
+        <td class="mdl-data-table__cell--non-numeric"><a href="/utvalg/{{_id}}">{{name}}</a></td>
+        <td class="mdl-data-table__cell--non-numeric"><a href="/kalender?boardId={{_id}}">Møtekalender</a></td>
     </tr>
     {{/each}}
     </tbody>
 </table>
+    <div class="mdl-cell mdl-cell--2-col"></div>
+</div>
