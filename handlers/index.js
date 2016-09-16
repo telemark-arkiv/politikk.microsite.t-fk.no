@@ -88,6 +88,7 @@ module.exports.showContact = (request, reply) => {
     versionVideoUrl: pkg.louie.versionVideoUrl,
     systemName: pkg.louie.systemName,
     githubUrl: pkg.repository.url
+    contact: require('../config/contacts.json')
   }
   reply.view('kontakt', viewOptions)
 }

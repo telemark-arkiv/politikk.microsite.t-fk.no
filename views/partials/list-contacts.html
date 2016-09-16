@@ -1,0 +1,38 @@
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric">Navn</th>
+            <th class="mdl-data-table__cell--non-numeric">E-post</th>
+            <th class="mdl-data-table__cell--non-numeric">Mobil</th>
+            <th class="mdl-data-table__cell--non-numeric">Telefon</th>
+            <th class="mdl-data-table__cell--non-numeric">Utvalg</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each contacts}}
+            <tr>
+                <td class="mdl-data-table__cell--non-numeric">{{name}}</td>
+                <td class="mdl-data-table__cell--non-numeric">
+                    {{#if publicMail}}
+                        <a href="mailto:{{publicMail}}" title="Send e-post til {{publicMail}}">{{publicMail}}</a>
+                    {{/if}}
+                </td>
+                <td class="mdl-data-table__cell--non-numeric">
+                    {{#if mobilePhone}}
+                        <a href="tel:{{mobilePhone}}" title="Ring til mobiltelefonnummeret {{mobilePhone}}">{{mobilePhone}}</a>
+                    {{/if}}
+                </td>
+                <td class="mdl-data-table__cell--non-numeric">
+                    {{#if phone}}
+                        <a href="tel:{{phone}}" title="Ring til telefonnummeret {{phone}}">{{phone}}</a>
+                    {{/if}}
+                </td>
+                <td class="mdl-data-table__cell--non-numeric">
+                    {{#each committees}}
+                        <a href="/utvalg/{{groupRecno}}" title="Gå til detaljsiden for utvalget">{{name}}</a><br/>
+                    {{/each}}
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

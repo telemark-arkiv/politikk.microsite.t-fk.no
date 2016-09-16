@@ -1,0 +1,142 @@
+[
+  {
+    "recno": null,
+    "name": "Stig Haddal",
+    "phone": "+47 35 91 72 49",
+    "title": null,
+    "privateMail": null,
+    "mobilePhone":"+47 995 51 054",
+    "zip": null,
+    "address": null,
+    "gender": "Mann",
+    "publicMail": "stig.haddal@t-fk.no",
+    "committees":[
+      {
+        "name":"Fylkestinget",
+        "groupRecno": 216162
+      },
+      {
+        "name":"Fylkesutvalet",
+        "groupRecno": 216167
+      }
+    ]
+  },
+  {
+    "recno": null,
+    "name": "Liss Haraldsen",
+    "phone": "+47 35 91 73 06",
+    "title": null,
+    "privateMail": null,
+    "mobilePhone":"+47 402 02 454",
+    "zip": null,
+    "address": null,
+    "gender": "Kvinne",
+    "publicMail": "liss.haraldsen@t-fk.no",
+    "committees":[
+      {
+        "name":"Hovudutval for kompetanse",
+        "groupRecno": 217336
+      },
+      {
+        "name":"Telemark fylkeskommunale klagenemnd",
+        "groupRecno": 217338
+      },
+      {
+        "name":"Yrkesopplæringsnemnda",
+        "groupRecno": 217342
+      }
+    ]
+  },
+  {
+    "recno": null,
+    "name": "Evy Halvdansdatter Wang",
+    "phone": "+47 35 91 72 29",
+    "title": null,
+    "privateMail": null,
+    "mobilePhone":"+47 990 40 011",
+    "zip": null,
+    "address": null,
+    "gender": "Kvinne",
+    "publicMail": "evy.halvdansdatter-wang@t-fk.no",
+    "committees":[
+      {
+        "name":"Hovudutval for samferdsel",
+        "groupRecno": 217337
+      },
+      {
+        "name":"Klagenemnda for skolesaker",
+        "groupRecno": 217341
+      }
+    ]
+  },
+  {
+    "recno": null,
+    "name": "Helèn Andersen",
+    "phone": "+47 35 91 73 02",
+    "title": null,
+    "privateMail": null,
+    "mobilePhone":"+47 948 37 771",
+    "zip": null,
+    "address": null,
+    "gender": "Kvinne",
+    "publicMail": "kirsten-helen.andersen@t-fk.no",
+    "committees":[
+      {
+        "name":"Administrasjonsutvalet",
+        "groupRecno": 217642
+      },
+      {
+        "name":"Forhandlingsutvalget",
+        "groupRecno": null
+      },
+      {
+        "name":"Hovudutval for næringsutvikling",
+        "groupRecno": 217335
+      }
+    ]
+  },
+  {
+    "recno": null,
+    "name": "Line Bosnes",
+    "phone": "",
+    "title": null,
+    "privateMail": null,
+    "mobilePhone":"+47 906 56 426",
+    "zip": null,
+    "address": null,
+    "gender": "Kvinne",
+    "publicMail": "line.bosnes@temark.no",
+    "committees":[
+      {
+        "name":"Kontrollutvalget",
+        "groupRecno": null
+      }
+    ]
+  },
+  {
+    "recno": null,
+    "name": "Renate Strand",
+    "phone": "+47 35 91 70 22",
+    "title": null,
+    "privateMail": null,
+    "mobilePhone":"+47 404 56 067",
+    "zip": null,
+    "address": null,
+    "gender": "Kvinne",
+    "publicMail": "renate.strand@t-fk.no",
+    "committees":[
+      {
+        "name":"Fylkeskommunalt råd for personer med nedsatt funksjonsevne",
+        "groupRecno": 217345
+      },
+      {
+        "name":"Hovudutval for kultur",
+        "groupRecno": 217339
+      },
+      {
+        "name":"Telemark fylkeskommunale eldreråd",
+        "groupRecno": 217344
+      }
+    ]
+  }
+]
