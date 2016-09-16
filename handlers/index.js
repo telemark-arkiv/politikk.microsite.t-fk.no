@@ -7,6 +7,14 @@ const wreckOptions = {
   json: true
 }
 
+function nameSort (a, b) {
+  if (a.name < b.name)
+    return -1
+  if (a.name > b.name)
+    return 1
+  return 0
+}
+
 module.exports.showFrontpage = (request, reply) => {
   const jobsTodo = 3
   var jobsDone = 0
@@ -38,6 +46,7 @@ module.exports.showFrontpage = (request, reply) => {
     if (error) {
       reply(error)
     } else {
+      payload.sort(nameSort)
       viewOptions.parties = payload
     }
     allAboard()
@@ -47,6 +56,7 @@ module.exports.showFrontpage = (request, reply) => {
     if (error) {
       reply(error)
     } else {
+      payload.sort(nameSort)
       viewOptions.committees = payload
     }
     allAboard()
