@@ -1,1 +1,5 @@
-Politiker
+{{#each politicians}}
+    <h1>{{name}}</h1>
+    {{>contact-information-person}}
+    {{>list-committees-mine}}
+{{/each}}

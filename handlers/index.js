@@ -57,6 +57,7 @@ module.exports.showFrontpage = (request, reply) => {
 }
 
 module.exports.showCalendar = (request, reply) => {
+  const boardId = request.query.boardId
   const viewOptions = {
     version: pkg.version,
     versionName: pkg.louie.versionName,
@@ -64,7 +65,14 @@ module.exports.showCalendar = (request, reply) => {
     systemName: pkg.louie.systemName,
     githubUrl: pkg.repository.url
   }
-  Wreck.get(config.OPENGOV_MEETINGS_API_URL + '/meetings/next?limit=40', wreckOptions, function (error, res, payload) {
+
+  var meetingsUrl = `${config.OPENGOV_MEETINGS_API_URL}/meetings/next?limit=40`
+
+  if (boardId) {
+    meetingsUrl = `${meetingsUrl}&boardId=${boardId}`
+  }
+
+  Wreck.get(meetingsUrl, wreckOptions, function (error, res, payload) {
     if (error) {
       reply(error)
     } else {
@@ -100,80 +108,6 @@ module.exports.showParties = (request, reply) => {
     } else {
       viewOptions.parties = payload
       reply.view('partier', viewOptions)
-    }
-  })
-}
-
-module.exports.showCommitties = (request, reply) => {
-  const viewOptions = {
-    version: pkg.version,
-    versionName: pkg.louie.versionName,
-    versionVideoUrl: pkg.louie.versionVideoUrl,
-    systemName: pkg.louie.systemName,
-    githubUrl: pkg.repository.url
-  }
-  Wreck.get(config.OPENGOV_POLITICIANS_API_URL + '/committees', wreckOptions, function (error, res, payload) {
-    if (error) {
-      reply(error)
-    } else {
-      viewOptions.committees = payload
-      reply.view('utvalg', viewOptions)
-    }
-  })
-}
-
-module.exports.showCommittee = (request, reply) => {
-  const boardId = request.params.boardId
-  const jobsTodo = 4
-  var jobsDone = 0
-  const viewOptions = {
-    version: pkg.version,
-    versionName: pkg.louie.versionName,
-    versionVideoUrl: pkg.louie.versionVideoUrl,
-    systemName: pkg.louie.systemName,
-    githubUrl: pkg.repository.url
-  }
-
-  function allAboard () {
-    jobsDone++
-    if (jobsDone === jobsTodo) {
-      reply.view('utvalget', viewOptions)
-    }
-  }
-
-  Wreck.get(config.OPENGOV_MEETINGS_API_URL + '/meetings/next?limit=1&boardId=' + boardId, wreckOptions, function (error, res, payload) {
-    if (error) {
-      reply(error)
-    } else {
-      viewOptions.meetings = payload
-    }
-    allAboard()
-  })
-
-  Wreck.get(config.OPENGOV_MEETINGS_API_URL + '/meetings/previous?limit=5&boardId=' + boardId, wreckOptions, function (error, res, payload) {
-    if (error) {
-      reply(error)
-    } else {
-      viewOptions.previousMeetings = payload
-    }
-    allAboard()
-  })
-
-  Wreck.get(config.OPENGOV_POLITICIANS_API_URL + '/committees/' + boardId, wreckOptions, function (error, res, payload) {
-    if (error) {
-      reply(error)
-    } else {
-      viewOptions.committees = payload
-      allAboard()
-    }
-  })
-
-  Wreck.get(config.OPENGOV_POLITICIANS_API_URL + '/committees/' + boardId + '/members', wreckOptions, function (error, res, payload) {
-    if (error) {
-      reply(error)
-    } else {
-      viewOptions.members = payload
-      allAboard()
     }
   })
 }
@@ -215,5 +149,13 @@ module.exports.showPolitician = (request, reply) => {
     systemName: pkg.louie.systemName,
     githubUrl: pkg.repository.url
   }
-  reply.view('politiker', viewOptions)
+  const politicianUrl = `${config.OPENGOV_POLITICIANS_API_URL}/politicians/${request.params.politikerId}`
+  Wreck.get(politicianUrl, wreckOptions, (error, res, payload) => {
+    if (error) {
+      reply(error)
+    } else {
+      viewOptions.politicians = payload
+      reply.view('politiker', viewOptions)
+    }
+  })
 }

@@ -37,34 +37,10 @@ module.exports = [
   },
   {
     method: 'GET',
-    path: '/partier',
-    config: {
-      handler: handlers.showParties,
-      description: 'Show parties'
-    }
-  },
-  {
-    method: 'GET',
     path: '/personvern',
     config: {
       handler: handlers.showLegal,
       description: 'Show legal'
-    }
-  },
-  {
-    method: 'GET',
-    path: '/utvalg',
-    config: {
-      handler: handlers.showCommitties,
-      description: 'Show committies'
-    }
-  },
-  {
-    method: 'GET',
-    path: '/utvalg/{boardId}',
-    config: {
-      handler: handlers.showCommittee,
-      description: 'Show committee'
     }
   },
   {
