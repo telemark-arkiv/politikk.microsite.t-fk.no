@@ -1,18 +1,11 @@
 'use strict'
 
 const Wreck = require('wreck')
+const sortName = require('../lib/sort-name')
 const config = require('../config')
 const pkg = require('../package.json')
 const wreckOptions = {
   json: true
-}
-
-function nameSort (a, b) {
-  if (a.name < b.name)
-    return -1
-  if (a.name > b.name)
-    return 1
-  return 0
 }
 
 module.exports.showFrontpage = (request, reply) => {
@@ -46,7 +39,7 @@ module.exports.showFrontpage = (request, reply) => {
     if (error) {
       reply(error)
     } else {
-      payload.sort(nameSort)
+      payload.sort(sortName)
       viewOptions.parties = payload
     }
     allAboard()
@@ -56,7 +49,7 @@ module.exports.showFrontpage = (request, reply) => {
     if (error) {
       reply(error)
     } else {
-      payload.sort(nameSort)
+      payload.sort(sortName)
       viewOptions.committees = payload
     }
     allAboard()
@@ -87,7 +80,7 @@ module.exports.showContact = (request, reply) => {
     versionName: pkg.louie.versionName,
     versionVideoUrl: pkg.louie.versionVideoUrl,
     systemName: pkg.louie.systemName,
-    githubUrl: pkg.repository.url
+    githubUrl: pkg.repository.url,
     contact: require('../config/contacts.json')
   }
   reply.view('kontakt', viewOptions)
