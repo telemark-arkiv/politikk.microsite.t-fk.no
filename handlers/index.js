@@ -89,27 +89,9 @@ module.exports.showContact = (request, reply) => {
     versionVideoUrl: pkg.louie.versionVideoUrl,
     systemName: pkg.louie.systemName,
     githubUrl: pkg.repository.url,
-    contact: require('../config/contacts.json')
+    contacts: require('../config/contacts.json')
   }
   reply.view('kontakt', viewOptions)
-}
-
-module.exports.showParties = (request, reply) => {
-  const viewOptions = {
-    version: pkg.version,
-    versionName: pkg.louie.versionName,
-    versionVideoUrl: pkg.louie.versionVideoUrl,
-    systemName: pkg.louie.systemName,
-    githubUrl: pkg.repository.url
-  }
-  Wreck.get(config.OPENGOV_POLITICIANS_API_URL + '/parties', wreckOptions, function (error, res, payload) {
-    if (error) {
-      reply(error)
-    } else {
-      viewOptions.parties = payload
-      reply.view('partier', viewOptions)
-    }
-  })
 }
 
 module.exports.showLegal = (request, reply) => {
