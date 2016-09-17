@@ -1,18 +1,24 @@
 <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col"></div>
-<table  class="mdl-data-table mdl-js-data-table mdl-cell--8-col mdl-cell--8-col-tablet mdl-shadow--2dp">
-    <tbody>
-    {{#each meetings}}
-    <tr>
-        <td class="mdl-data-table__cell--non-numeric">
-            {{date}} {{year}}
-        </td>
-        <td class="mdl-data-table__cell--non-numeric">
-            <a href="/agenda/{{_id}}">{{boardName}}</a>
-        </td>
-    </tr>
-    {{/each}}
-    </tbody>
-</table>
-    <div class="mdl-cell mdl-cell--2-col"></div>
+    <div class="mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <table  class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+                <tr>
+                    <th class="mdl-data-table__cell--non-numeric">Dato</th>
+                    <th class="mdl-data-table__cell--non-numeric">Utvalg</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each meetings}}
+            <tr>
+                <td class="mdl-data-table__cell--non-numeric">
+                    {{date}} {{year}}
+                </td>
+                <td class="mdl-data-table__cell--non-numeric">
+                    <a href="/agenda/{{_id}}">{{boardName}}</a>
+                </td>
+            </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
 </div>

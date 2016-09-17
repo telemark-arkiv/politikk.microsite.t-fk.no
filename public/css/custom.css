@@ -1,24 +1,9 @@
-.mdl-layout {
-    align-items: center;
-    justify-content: center;
-}
-
-.mdl-card__actions {
-    display: flex;
-    box-sizing:border-box;
-    align-items: center;
-}
-
 .mdl-layout__header {
     background-color: #FFD520;
 }
 
-.mdl-card__media {
-    background-color: #6AC4AE;
-}
-
-.mdl-color--primary {
-    background-color: #FFD520 !important;
+.mdl-layout__drawer-button {
+    color: black;
 }
 
 .mdl-button--accent {
@@ -31,19 +16,6 @@
 
 .mdl-textfield__label:after {
     background-color: #6AC4AE !important;
-}
-
-.docs-footer.mdl-mini-footer {
-    position: relative;
-    height: 90px;
-    margin-top: 15%;
-    bottom: 0;
-    padding: 24px;
-}
-
-.login-container {
-    padding: 24px;
-    flex: none;
 }
 
 .margin-left-20 {
@@ -60,20 +32,6 @@
 
 .margin-right-5 {
     margin-left: 5px;
-}
-
-.previewUL {
-    list-style-type: none;
-}
-
-.modal {
-    overflow-x: visible;
-    overflow-y: visible;
-    position: absolute;
-}
-
-.modal__dialog {
-    width: 600px;
 }
 
 button[disabled=disabled], button:disabled {
@@ -93,23 +51,9 @@ button[disabled=disabled], button:disabled {
     visibility: hidden;
 }
 
-.center {
-    max-width: 980px;
-}
-
 .height100 {
     height: 100px;
     min-height: 100px;
-}
-
-.mdl-data-table {
-    font-size: 16px;
-    top: 15px;
-    width: 100%;
-}
-.mdl-data-table2 {
-    font-size: 16px;
-    top: 15px;
 }
 
 .mdl-data-table__cell--non-numeric {
@@ -118,11 +62,6 @@ button[disabled=disabled], button:disabled {
 
 th.mdl-data-table__cell--non-numeric {
     font-size: 16px;
-}
-
-.mdl-textfield__input {
-    border-bottom: 2px solid black;
-    font-size: 20px;
 }
 
 .fontBigger {
@@ -137,158 +76,6 @@ a:visited {
     color: #007c97;
 }
 
-.highlight-me {
-    background-color: #cceff4;
-}
-
-/* Dialog */
-.mdl-snackbar {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    margin-right: -50%;
-    cursor: default;
-    background-color: #323232;
-    z-index: 10000;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    will-change: transform;
-    -webkit-transform: translate(0, 80px);
-    transform: translate(0, 80px);
-    transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 1, 1);
-    transition: transform 0.25s cubic-bezier(0.4, 0, 1, 1);
-    transition: transform 0.25s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.25s cubic-bezier(0.4, 0, 1, 1);
-    pointer-events: none; }
-@media (max-width: 479px) {
-    .mdl-snackbar {
-        width: 100%;
-        left: 0;
-        min-height: 48px;
-        max-height: 80px; } }
-@media (min-width: 480px) {
-    .mdl-snackbar {
-        min-width: 288px;
-        max-width: 568px;
-        border-radius: 2px; } }
-.mdl-snackbar--active {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    pointer-events: auto;
-    transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.2, 1);
-    transition: transform 0.25s cubic-bezier(0, 0, 0.2, 1);
-    transition: transform 0.25s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.25s cubic-bezier(0, 0, 0.2, 1); }
-.mdl-snackbar__text {
-    padding: 14px 24px;
-    vertical-align: middle;
-    color: white; }
-.mdl-snackbar__action {
-    background: transparent;
-    border: none;
-    color: rgb(255,64,129);
-    text-transform: uppercase;
-    padding: 14px 24px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 0;
-    overflow: hidden;
-    outline: none;
-    opacity: 0;
-    pointer-events: none;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle; }
-.mdl-snackbar__action::-moz-focus-inner {
-    border: 0; }
-.mdl-snackbar__action:not([aria-hidden]) {
-    opacity: 1;
-    pointer-events: auto; }
-
-/* TOOLTIP */
-.mdl-tooltip {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transform-origin: top center;
-    transform-origin: top center;
-    will-change: transform;
-    z-index: 999;
-    background: rgba(97,97,97, 0.9);
-    border-radius: 2px;
-    color: rgb(255,255,255);
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 14px;
-    max-width: 170px;
-    position: fixed;
-    top: -500px;
-    left: -500px;
-    padding: 8px;
-    text-align: center; }
-
-.mdl-tooltip.is-active {
-    -webkit-animation: pulse 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
-    animation: pulse 200ms cubic-bezier(0, 0, 0.2, 1) forwards; }
-
-.mdl-tooltip--large {
-    line-height: 14px;
-    font-size: 14px;
-    padding: 16px; }
-
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        opacity: 0; }
-    50% {
-        -webkit-transform: scale(0.99);
-        transform: scale(0.99); }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 1;
-        visibility: visible; } }
-
-@keyframes pulse {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        opacity: 0; }
-    50% {
-        -webkit-transform: scale(0.99);
-        transform: scale(0.99); }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 1;
-        visibility: visible; } }
-
-/** MODAL **/
-
-#modalPreview {
-    z-index: 1000;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.warningColor {
-    color: #e30438
-}
-
-#watermark {
-    position: absolute;
-    z-index: 2000;
-}
-
-.mdl-card--border-bottom {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .fullWidth {
     width: 100%;
 }
@@ -300,66 +87,7 @@ a:visited {
     margin-right: 0.8rem;
     display: inline-block;
 }
-.mdl-cell--6-col, .mdl-cell--6-col-desktop.mdl-cell--6-col-desktop{
+
+.mdl-data-table {
     width: 100%;
-}
-/*Overskrift for frontend løsningen*/
-#header {
-    width: 100%;
-    left: 200px;
-    position: relative;
-    bottom: 20px;
-}
-
-/*Tabell frontend*/
-#skolekyssokere {
-    position: relative;
-    top: 5px;
-    left: 5px;
-}
-
-.mdl-layout__content {
-    -ms-flex: 0 1 auto;
-    position: relative;
-    display: inline-block;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    z-index: 1;
-    -webkit-overflow-scrolling: touch;
-}
-
-.exportToExcelClick {
-   position: relative;
-    top: 10px;
-    bottom: 426px;
-    left: 0;
-}
-
-#typeEnheter{
-    float: left;
-}
-
-#specials{
-    float: left;
-}
-
-#statusSokere{
-    float: left;
-    position: relative;
-    left: 30px;
-}
-
-#sokere{
-    float: left;
-    position: relative;
-    left: 60px;
-}
-
-#rawData{
-    position: relative;
-    top: 50px;
-    right: 283px;
 }

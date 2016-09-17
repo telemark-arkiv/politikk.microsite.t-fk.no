@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="Telemark fylkeskommune">
-<title>{{systemName}} v{{version}} - {{versionName}}</title>
+<title>{{systemName}}</title>
 <!-- Core CSS -->
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<div class="mdl-layout--fixed-header">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
@@ -32,29 +32,33 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/">Forsiden</a>
-                <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/partier">Partier</a>
-                <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/utvalg">Utvalg</a>
-                <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/kalender">Møtekalender</a>
-                <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/kontakt">Kontakt</a>
-                <a class="mdl-navigation__link mdl-navigation__link--icon mdl-color-text--black" href="/personvern">Personvern</a>
+                <a class="mdl-navigation__link mdl-color-text--black" href="/">Forsiden</a>
+                <a class="mdl-navigation__link mdl-color-text--black" href="/partier">Partier</a>
+                <a class="mdl-navigation__link mdl-color-text--black" href="/utvalg">Utvalg</a>
+                <a class="mdl-navigation__link mdl-color-text--black" href="/kalender">Møtekalender</a>
+                <a class="mdl-navigation__link mdl-color-text--black" href="/kontakt">Kontakt</a>
+                <a class="mdl-navigation__link mdl-color-text--black" href="/personvern">Personvern</a>
             </nav>
         </div>
     </header>
     <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Navigasjon</span>
+        <span class="mdl-layout__title">Navigasjon</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="/">Forsiden</a>
-            <a class="mdl-navigation__link" href="/partier">Partier</a>
-            <a class="mdl-navigation__link" href="/utvalg">Utvalg</a>
-            <a class="mdl-navigation__link" href="/kalender">Møtekalender</a>
-            <a class="mdl-navigation__link" href="/kontakt">Kontakt</a>
-            <a class="mdl-navigation__link" href="/personvern">Personvern</a>
+            <a class="mdl-navigation__link mdl-color-text--black" href="/">Forsiden</a>
+            <a class="mdl-navigation__link mdl-color-text--black" href="/partier">Partier</a>
+            <a class="mdl-navigation__link mdl-color-text--black" href="/utvalg">Utvalg</a>
+            <a class="mdl-navigation__link mdl-color-text--black" href="/kalender">Møtekalender</a>
+            <a class="mdl-navigation__link mdl-color-text--black" href="/kontakt">Kontakt</a>
+            <a class="mdl-navigation__link mdl-color-text--black" href="/personvern">Personvern</a>
         </nav>
     </div>
-    <main class="mdl-layout mdl-js-layout mdl-layout__content">
+    <main class="mdl-layout__content">
         {{{content}}}
     </main>
+    <div class="mdl-snackbar mdl-js-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action"></button>
+    </div>
 </div>
 </body>
 </html>
