@@ -1,24 +1,20 @@
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col"></div>
-    <table class="mdl-data-table mdl-js-data-table mdl-cell--8-col mdl-cell--8-col-tablet mdl-shadow--2dp">
-        <thead>
-        <tr>
-            <th class="mdl-data-table__cell--non-numeric">Parti/utvalg</th>
-            <th class="mdl-data-table__cell--non-numeric">Rolle</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{#each committees}}
-        <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-                <span class="hidden">{{name}}</span><a href="/{{linkToPartyOrCommittee}}/{{groupRecno}}">{{name}}</a>
-            </td>
-            <td class="mdl-data-table__cell--non-numeric">
-                {{roleDescription}}
-            </td>
-        </tr>
-        {{/each}}
-        </tbody>
-    </table>
-    <div class="mdl-cell mdl-cell--2-col"></div>
-</div>
+ <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+    <thead>
+    <tr>
+        <th class="mdl-data-table__cell--non-numeric">Parti/utvalg</th>
+        <th class="mdl-data-table__cell--non-numeric">Rolle</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each committees}}
+    <tr>
+        <td class="mdl-data-table__cell--non-numeric">
+            <span class="hidden">{{name}}</span><a href="/{{linkToPartyOrCommittee}}/{{groupRecno}}">{{name}}</a>
+        </td>
+        <td class="mdl-data-table__cell--non-numeric">
+            {{roleDescription}}
+        </td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>

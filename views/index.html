@@ -1,3 +1,10 @@
-{{>list-meetings}}
-{{>list-committees}}
-{{>list-parties}}
+<div class="mdl-grid">
+    <div class="mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <h1>Aktuelle møter</h1>
+        {{>list-meetings}}
+        <h1>Utvalg</h1>
+        {{>list-committees}}
+        <h1>Partier</h1>
+        {{>list-parties}}
+    </div>
+</div>

@@ -1,41 +1,37 @@
-<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col"></div>
-    <table class="mdl-data-table mdl-js-data-table mdl-cell--8-col mdl-cell--8-col-tablet mdl-shadow--2dp">
-        <thead>
-        <tr>
-            <th class="mdl-data-table__cell--non-numeric">Kontaktinformasjon</th>
-        </tr>
-        </thead>
-        <tbody>
-        {{#if mail}}
-        <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-                <a href="mailto:{{maill}}" title="Send e-post til {{mail}}">{{mail}}</a>
-            </td>
-        </tr>
-        {{/if}}
-        {{#if tlf}}
-        <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-                <a href="tel:{{tlf}}" title="Ring til telefonnummer {{tlf}}">{{tlf}}</a>
-            </td>
-        </tr>
-        {{/if}}
-        {{#if url}}
-        <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-                <a href="{{url}}" target="_blank" title="Besøk nettstedet. Åpnes i nytt vindu">{{url}}</a>
-            </td>
-        </tr>
-        {{/if}}
-        {{#if address}}
-        <tr>
-            <td class="mdl-data-table__cell--non-numeric">
-                {{address}}, {{zip}} {{place}}
-            </td>
-        </tr>
-        {{/if}}
-        </tbody>
-    </table>
-    <div class="mdl-cell mdl-cell--2-col"></div>
-</div>
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+    <thead>
+    <tr>
+        <th class="mdl-data-table__cell--non-numeric">Kontaktinformasjon</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#if mail}}
+    <tr>
+        <td class="mdl-data-table__cell--non-numeric">
+            <a href="mailto:{{maill}}" title="Send e-post til {{mail}}">{{mail}}</a>
+        </td>
+    </tr>
+    {{/if}}
+    {{#if tlf}}
+    <tr>
+        <td class="mdl-data-table__cell--non-numeric">
+            <a href="tel:{{tlf}}" title="Ring til telefonnummer {{tlf}}">{{tlf}}</a>
+        </td>
+    </tr>
+    {{/if}}
+    {{#if url}}
+    <tr>
+        <td class="mdl-data-table__cell--non-numeric">
+            <a href="{{url}}" target="_blank" title="Besøk nettstedet. Åpnes i nytt vindu">{{url}}</a>
+        </td>
+    </tr>
+    {{/if}}
+    {{#if address}}
+    <tr>
+        <td class="mdl-data-table__cell--non-numeric">
+            {{address}}, {{zip}} {{place}}
+        </td>
+    </tr>
+    {{/if}}
+    </tbody>
+</table>

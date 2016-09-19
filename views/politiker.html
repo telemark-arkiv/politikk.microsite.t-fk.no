@@ -1,5 +1,10 @@
-{{#each politicians}}
-    <h1>{{name}}</h1>
-    {{>contact-information-person}}
-    {{>list-committees-mine}}
-{{/each}}
+<div class="mdl-grid">
+    <div class="mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        {{#each politicians}}
+            <h1>{{name}}</h1>
+            {{>contact-information-person}}
+            <h2>Partier/Utvalg</h2>
+            {{>list-committees-mine}}
+        {{/each}}
+    </div>
+</div>

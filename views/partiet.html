@@ -1,7 +1,11 @@
-{{#each parties}}
-    <h1>{{name}}</h1>
-    {{>contact-information-group}}
-{{/each}}
+<div class="mdl-grid">
+    <div class="mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        {{#each parties}}
+            <h1>{{name}}</h1>
+            {{>contact-information-group}}
+        {{/each}}
 
-<h1>Partimedlemmer</h1>
-{{>list-members}}
+        <h1>Partimedlemmer</h1>
+        {{>list-members}}
+    </div>
+</div>
