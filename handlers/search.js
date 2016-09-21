@@ -14,6 +14,11 @@ module.exports.showSearchResults = (request, reply) => {
     githubUrl: pkg.repository.url
   }
   request.seneca.act({role: 'search', query: searchText}, (error, data) => {
-    reply(error || searchText)
+    if (error) {
+      reply(error)
+    } else {
+      viewOptions.results = data
+      reply.view('sok', viewOptions)
+    }
   })
 }
