@@ -10,5 +10,13 @@ module.exports = [
       handler: handlers.showSearchResults,
       description: 'Show search results'
     }
+  },
+  {
+    method: 'POST',
+    path: '/sok',
+    config: {
+      handler: handlers.showSearchResults,
+      description: 'Show search results'
+    }
   }
 ]

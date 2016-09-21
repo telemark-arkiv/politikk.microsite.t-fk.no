@@ -39,17 +39,19 @@
                 <a class="mdl-navigation__link mdl-color-text--black" href="/kontakt">Kontakt</a>
                 <a class="mdl-navigation__link mdl-color-text--black" href="/personvern">Personvern</a>
             </nav>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
-                <label class="mdl-button mdl-js-button mdl-button--icon"
-                       for="fixed-header-drawer-exp">
-                    <i class="material-icons mdl-color-text--black">search</i>
-                </label>
-                <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input mdl-color-text--black" type="text" name="searchText"
-                           id="fixed-header-drawer-exp">
+            <form action="/sok" method="post">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon"
+                           for="fixed-header-drawer-exp">
+                        <i class="material-icons mdl-color-text--black">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input mdl-color-text--black" type="text" name="searchText" value="{{searchText}}"
+                               id="fixed-header-drawer-exp">
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </header>
     <div class="mdl-layout__drawer">
