@@ -1,17 +1,21 @@
 'use strict'
 
 const Hapi = require('hapi')
+const Chairo = require('chairo')
+const Seneca = require('seneca')()
 const vision = require('vision')
 const inert = require('inert')
 const server = new Hapi.Server()
 const config = require('./config')
 const politiciansService = require('./index')
+const senecaSearch = require('./lib/seneca-search')
 
 server.connection({
   port: config.OPENGOV_POLITIKK_SERVER_PORT
 })
 
 const plugins = [
+  {register: Chairo, options: {seneca: Seneca}},
   {register: vision},
   {register: inert},
   {register: politiciansService}
@@ -47,6 +51,8 @@ server.register(plugins, error => {
       auth: false
     }
   })
+  
+  server.seneca.use(senecaSearch)
 })
 
 module.exports.start = () => {
