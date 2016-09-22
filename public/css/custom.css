@@ -3,7 +3,7 @@
 }
 
 .mdl-layout__drawer-button {
-    color: black;
+    color: black !important;
 }
 
 .mdl-button--accent {
@@ -90,4 +90,8 @@ a:visited {
 
 .mdl-data-table {
     width: 100%;
+}
+
+.alignBottom {
+    vertical-align: bottom;
 }
