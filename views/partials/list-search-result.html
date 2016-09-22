@@ -9,8 +9,10 @@
     <tbody>
     {{#each results}}
     <tr>
-        <td class="mdl-data-table__cell--non-numeric">{{name}}</td>
-        <td class="mdl-data-table__cell--non-numeric">{{type}}</td>
+        <td class="mdl-data-table__cell--non-numeric">
+            <a href="{{url}}" title="Les mer om {{name}}">{{title}}</a>
+        </td>
+        <td class="mdl-data-table__cell--non-numeric">{{translateType type}}</td>
         <td class="mdl-data-table__cell--non-numeric">
             <a href="{{url}}" title="Les mer om {{name}}">Vis</a>
         </td>

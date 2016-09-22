@@ -51,7 +51,7 @@ server.register(plugins, error => {
       auth: false
     }
   })
-  
+
   server.seneca.use(senecaSearch)
 })
 
