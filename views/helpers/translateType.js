@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = (type) => {
-  switch(type) {
+  switch (type) {
     case 'politician':
       return 'Politiker'
     case 'party':

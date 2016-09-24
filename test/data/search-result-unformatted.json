@@ -1,0 +1,562 @@
+{
+  "took": 20,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 8,
+    "max_score": 1.781258,
+    "hits": [
+      {
+        "_index": "politics",
+        "_type": "party",
+        "_id": "AVdd_4LJoyC60N9ZRHji",
+        "_score": 1.781258,
+        "_source": {
+          "title": "Rødt - Telemark",
+          "type": "party",
+          "description": "Rødt - Telemark",
+          "url": "https://politikk.t-fk.no/partier/214617",
+          "data": {
+            "_id": 214617,
+            "name": "Rødt - Telemark",
+            "address": "Søndre Skogenvei 4",
+            "place": "NOTODDEN",
+            "zip": "3679",
+            "mail": null,
+            "tlf": null,
+            "url": null
+          }
+        }
+      },
+      {
+        "_index": "politics",
+        "_type": "politician",
+        "_id": "AVdd_1raoyC60N9ZRHiP",
+        "_score": 0.8310806,
+        "_source": {
+          "title": "Ottar Flatland",
+          "type": "politician",
+          "description": "Ottar Flatland, Rødt - Telemark, Hovudutval for samferdsel, Mobil: +47 91309222",
+          "url": "https://politikk.t-fk.no/politiker/218099",
+          "data": {
+            "_id": "57dbb5c5b1e182c577265938",
+            "recno": 218099,
+            "name": "Ottar Flatland",
+            "phone": null,
+            "title": null,
+            "privateMail": "ottar.flatland@flatdal.net",
+            "mobilePhone": "+47 91309222",
+            "zip": "3841 FLATDAL",
+            "address": "Flatdalsbyen 6",
+            "gender": "Mann",
+            "publicMail": null,
+            "committees": [
+              {
+                "recno": 218099,
+                "groupRecno": 214617,
+                "name": "Rødt - Telemark",
+                "role": "Parti",
+                "roleDescription": "Partimedlem",
+                "address": "Søndre Skogenvei 4",
+                "place": "NOTODDEN",
+                "zip": "3679",
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218099,
+                "groupRecno": 217337,
+                "name": "Hovudutval for samferdsel",
+                "role": "Medlem i",
+                "roleDescription": "Utvalgsmedlem",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              }
+            ],
+            "committeeIds": [
+              214617,
+              217337
+            ]
+          }
+        }
+      },
+      {
+        "_index": "politics",
+        "_type": "politician",
+        "_id": "AVdd_1yFoyC60N9ZRHiT",
+        "_score": 0.77998245,
+        "_source": {
+          "title": "Morten Halvorsen",
+          "type": "politician",
+          "description": "Morten Halvorsen, Rødt - Telemark, Hovudutval for næringsutvikling, Mobil: +47 982 38 396",
+          "url": "https://politikk.t-fk.no/politiker/218094",
+          "data": {
+            "_id": "57dbb5c5b1e182c577265934",
+            "recno": 218094,
+            "name": "Morten Halvorsen",
+            "phone": null,
+            "title": null,
+            "privateMail": "mor-ha2@online.no",
+            "mobilePhone": "+47 982 38 396",
+            "zip": "3679 NOTODDEN",
+            "address": "Søndre Skogenvei 4",
+            "gender": "Mann",
+            "publicMail": null,
+            "committees": [
+              {
+                "recno": 218094,
+                "groupRecno": 214617,
+                "name": "Rødt - Telemark",
+                "role": "Parti",
+                "roleDescription": "Partimedlem",
+                "address": "Søndre Skogenvei 4",
+                "place": "NOTODDEN",
+                "zip": "3679",
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218094,
+                "groupRecno": 217335,
+                "name": "Hovudutval for næringsutvikling",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              }
+            ],
+            "committeeIds": [
+              214617,
+              217335
+            ]
+          }
+        }
+      },
+      {
+        "_index": "politics",
+        "_type": "politician",
+        "_id": "AVdd_0yfoyC60N9ZRHhv",
+        "_score": 0.6858474,
+        "_source": {
+          "title": "Charlotte Therkelsen Sætersdal",
+          "type": "politician",
+          "description": "Charlotte Therkelsen Sætersdal, Rødt - Telemark, Fylkestinget, Fylkesutvalet, Temark Representantskapet, Mobil: +47 92064797, E-post: charlotte.therkelsen.satersdal@t-fk.no",
+          "url": "https://politikk.t-fk.no/politiker/218147",
+          "data": {
+            "_id": "57dbb5c5b1e182c577265958",
+            "recno": 218147,
+            "name": "Charlotte Therkelsen Sætersdal",
+            "phone": null,
+            "title": null,
+            "privateMail": null,
+            "mobilePhone": "+47 92064797",
+            "zip": "3770 KRAGERØ",
+            "address": "Børnepikeveien 23",
+            "gender": "Kvinne",
+            "publicMail": "charlotte.therkelsen.satersdal@t-fk.no",
+            "committees": [
+              {
+                "recno": 218147,
+                "groupRecno": 214617,
+                "name": "Rødt - Telemark",
+                "role": "Parti",
+                "roleDescription": "Partimedlem",
+                "address": "Søndre Skogenvei 4",
+                "place": "NOTODDEN",
+                "zip": "3679",
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218147,
+                "groupRecno": 216162,
+                "name": "Fylkestinget",
+                "role": "Medlem i",
+                "roleDescription": "Utvalgsmedlem",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218147,
+                "groupRecno": 216167,
+                "name": "Fylkesutvalet",
+                "role": "Medlem i",
+                "roleDescription": "Utvalgsmedlem",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218147,
+                "groupRecno": 217299,
+                "name": "Temark Representantskapet",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              }
+            ],
+            "committeeIds": [
+              214617,
+              216162,
+              216167,
+              217299
+            ]
+          }
+        }
+      },
+      {
+        "_index": "politics",
+        "_type": "politician",
+        "_id": "AVdd_1QSoyC60N9ZRHh_",
+        "_score": 0.6824846,
+        "_source": {
+          "title": "Kari Anne Torsteinson",
+          "type": "politician",
+          "description": "Kari Anne Torsteinson, Rødt - Telemark, Fylkestinget, Hovudutval for samferdsel, Mobil: +47 952 25 246, E-post: kar.torsteinson@nenett.no",
+          "url": "https://politikk.t-fk.no/politiker/218119",
+          "data": {
+            "_id": "57dbb5c5b1e182c577265948",
+            "recno": 218119,
+            "name": "Kari Anne Torsteinson",
+            "phone": null,
+            "title": null,
+            "privateMail": "kari.a.torsteinson@t-fk.no",
+            "mobilePhone": "+47 952 25 246",
+            "zip": "3679 NOTODDEN",
+            "address": "Søndre Skogenvei 4",
+            "gender": "Kvinne",
+            "publicMail": "kar.torsteinson@nenett.no",
+            "committees": [
+              {
+                "recno": 218119,
+                "groupRecno": 214617,
+                "name": "Rødt - Telemark",
+                "role": "Parti",
+                "roleDescription": "Partimedlem",
+                "address": "Søndre Skogenvei 4",
+                "place": "NOTODDEN",
+                "zip": "3679",
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218119,
+                "groupRecno": 216162,
+                "name": "Fylkestinget",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218119,
+                "groupRecno": 217337,
+                "name": "Hovudutval for samferdsel",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              }
+            ],
+            "committeeIds": [
+              214617,
+              216162,
+              217337
+            ]
+          }
+        }
+      },
+      {
+        "_index": "politics",
+        "_type": "politician",
+        "_id": "AVdd_2JVoyC60N9ZRHid",
+        "_score": 0.6180583,
+        "_source": {
+          "title": "Ole Roger Dyrkorn",
+          "type": "politician",
+          "description": "Ole Roger Dyrkorn, Rødt - Telemark, Fylkestinget, Temark Representantskapet, Hovudutval for næringsutvikling, Mobil: +47 98672695, E-post: ole.r.dyrkorn@t-fk.no",
+          "url": "https://politikk.t-fk.no/politiker/218081",
+          "data": {
+            "_id": "57dbb5c5b1e182c57726592a",
+            "recno": 218081,
+            "name": "Ole Roger Dyrkorn",
+            "phone": null,
+            "title": null,
+            "privateMail": null,
+            "mobilePhone": "+47 98672695",
+            "zip": "3960 STATHELLE",
+            "address": "Herreveirn 151",
+            "gender": "Mann",
+            "publicMail": "ole.r.dyrkorn@t-fk.no",
+            "committees": [
+              {
+                "recno": 218081,
+                "groupRecno": 214617,
+                "name": "Rødt - Telemark",
+                "role": "Parti",
+                "roleDescription": "Partimedlem",
+                "address": "Søndre Skogenvei 4",
+                "place": "NOTODDEN",
+                "zip": "3679",
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218081,
+                "groupRecno": 216162,
+                "name": "Fylkestinget",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218081,
+                "groupRecno": 217299,
+                "name": "Temark Representantskapet",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218081,
+                "groupRecno": 217335,
+                "name": "Hovudutval for næringsutvikling",
+                "role": "Medlem i",
+                "roleDescription": "Utvalgsmedlem",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              }
+            ],
+            "committeeIds": [
+              214617,
+              216162,
+              217299,
+              217335
+            ]
+          }
+        }
+      },
+      {
+        "_index": "politics",
+        "_type": "politician",
+        "_id": "AVdd_1NAoyC60N9ZRHh9",
+        "_score": 0.6180583,
+        "_source": {
+          "title": "Tobias Drevland Lund",
+          "type": "politician",
+          "description": "Tobias Drevland Lund, Rødt - Telemark, Fylkestinget, Hovudutval for samferdsel, Mobil: +47 90 57 70 24, E-post: tobias.lund@kragero.kommune.no",
+          "url": "https://politikk.t-fk.no/politiker/218121",
+          "data": {
+            "_id": "57dbb5c5b1e182c57726594a",
+            "recno": 218121,
+            "name": "Tobias Drevland Lund",
+            "phone": null,
+            "title": null,
+            "privateMail": "tobiaslund96@gmail.com",
+            "mobilePhone": "+47 90 57 70 24",
+            "zip": "0562 OSLO",
+            "address": "Sars Gate 20",
+            "gender": "Mann",
+            "publicMail": "tobias.lund@kragero.kommune.no",
+            "committees": [
+              {
+                "recno": 218121,
+                "groupRecno": 214617,
+                "name": "Rødt - Telemark",
+                "role": "Parti",
+                "roleDescription": "Partimedlem",
+                "address": "Søndre Skogenvei 4",
+                "place": "NOTODDEN",
+                "zip": "3679",
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218121,
+                "groupRecno": 216162,
+                "name": "Fylkestinget",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218121,
+                "groupRecno": 217337,
+                "name": "Hovudutval for samferdsel",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              }
+            ],
+            "committeeIds": [
+              214617,
+              216162,
+              217337
+            ]
+          }
+        }
+      },
+      {
+        "_index": "politics",
+        "_type": "politician",
+        "_id": "AVdd_18IoyC60N9ZRHiV",
+        "_score": 0.5297643,
+        "_source": {
+          "title": "Ana Taylor Lopez",
+          "type": "politician",
+          "description": "Ana Taylor Lopez, Rødt - Telemark, Fylkestinget, Hovudutval for næringsutvikling, Telemark fylkeskommunale klagenemnd, Fylkeskommunalt råd for personer med nedsatt funksjonsevne, Mobil: +47 94199271, E-post: ana.lopez.taylor@gmail.com",
+          "url": "https://politikk.t-fk.no/politiker/218092",
+          "data": {
+            "_id": "57dbb5c5b1e182c577265932",
+            "recno": 218092,
+            "name": "Ana Taylor Lopez",
+            "phone": null,
+            "title": null,
+            "privateMail": null,
+            "mobilePhone": "+47 94199271",
+            "zip": "3970 LANGESUND",
+            "address": "Storgata 26",
+            "gender": "Kvinne",
+            "publicMail": "ana.lopez.taylor@gmail.com",
+            "committees": [
+              {
+                "recno": 218092,
+                "groupRecno": 214617,
+                "name": "Rødt - Telemark",
+                "role": "Parti",
+                "roleDescription": "Partimedlem",
+                "address": "Søndre Skogenvei 4",
+                "place": "NOTODDEN",
+                "zip": "3679",
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218092,
+                "groupRecno": 216162,
+                "name": "Fylkestinget",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218092,
+                "groupRecno": 217335,
+                "name": "Hovudutval for næringsutvikling",
+                "role": "Varamedlem i",
+                "roleDescription": "Varamedlem i utvalg",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218092,
+                "groupRecno": 217338,
+                "name": "Telemark fylkeskommunale klagenemnd",
+                "role": "Medlem i",
+                "roleDescription": "Utvalgsmedlem",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              },
+              {
+                "recno": 218092,
+                "groupRecno": 217345,
+                "name": "Fylkeskommunalt råd for personer med nedsatt funksjonsevne",
+                "role": "Medlem i",
+                "roleDescription": "Utvalgsmedlem",
+                "address": null,
+                "place": null,
+                "zip": null,
+                "mail": null,
+                "tlf": null,
+                "url": null
+              }
+            ],
+            "committeeIds": [
+              214617,
+              216162,
+              217335,
+              217338,
+              217345
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
