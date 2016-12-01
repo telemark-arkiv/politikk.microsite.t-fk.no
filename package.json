@@ -1,7 +1,7 @@
 {
   "name": "politikk.microsite.t-fk.no",
   "description": "Politikere, utvalg og møtekalender/sakskart på samme sted",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
